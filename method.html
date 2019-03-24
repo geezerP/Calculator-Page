@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Calculator Page</title></head>
+
+  <script>
+  function vuvuzela() {
+      var a, b,result;
+      a = parseFloat(document.getElementById('firstnumber').value);
+      b = parseFloat(document.getElementById('secondnumber').value);
+      result = a + b;
+      document.getElementById('result').value = result;
+  }
+  </script>
+
+
+<body>
+  <h1> Arithmetic operations on two numbers</h1>
+  First number: <br> <input type="number" id="firstnumber"><br>
+  Second number:<br> <input type="number" id="secondnumber"><br>
+  <button type="button" onclick="vuvuzela()">Submit</button><br>
+  Result: <input type="number" id="result">
+
+</body>
+</html>
